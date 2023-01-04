@@ -14,6 +14,13 @@
 		080F561929652A5300D6BB88 /* ToDoList_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080F561829652A5300D6BB88 /* ToDoList_iosTests.swift */; };
 		080F562329652A5300D6BB88 /* ToDoList_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080F562229652A5300D6BB88 /* ToDoList_iosUITests.swift */; };
 		080F562529652A5400D6BB88 /* ToDoList_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080F562429652A5400D6BB88 /* ToDoList_iosUITestsLaunchTests.swift */; };
+		080F563329653EA500D6BB88 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 080F563229653EA500D6BB88 /* FirebaseAuth */; };
+		080F563529653EA500D6BB88 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 080F563429653EA500D6BB88 /* FirebaseFirestore */; };
+		080F56372965406E00D6BB88 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 080F56362965406E00D6BB88 /* GoogleService-Info.plist */; };
+		080F563929654D4900D6BB88 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080F563829654D4900D6BB88 /* ListView.swift */; };
+		080F563B296557C100D6BB88 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080F563A296557C100D6BB88 /* Activity.swift */; };
+		080F563D296559C000D6BB88 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080F563C296559C000D6BB88 /* DataManager.swift */; };
+		080F563F2965A0BF00D6BB88 /* NewActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080F563E2965A0BF00D6BB88 /* NewActivityView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,11 @@
 		080F561E29652A5300D6BB88 /* ToDoList iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ToDoList iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		080F562229652A5300D6BB88 /* ToDoList_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoList_iosUITests.swift; sourceTree = "<group>"; };
 		080F562429652A5400D6BB88 /* ToDoList_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoList_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		080F56362965406E00D6BB88 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		080F563829654D4900D6BB88 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		080F563A296557C100D6BB88 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		080F563C296559C000D6BB88 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		080F563E2965A0BF00D6BB88 /* NewActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewActivityView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				080F563329653EA500D6BB88 /* FirebaseAuth in Frameworks */,
+				080F563529653EA500D6BB88 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +109,12 @@
 			isa = PBXGroup;
 			children = (
 				080F560729652A4700D6BB88 /* ToDoList_iosApp.swift */,
+				080F563829654D4900D6BB88 /* ListView.swift */,
+				080F563A296557C100D6BB88 /* Activity.swift */,
+				080F563C296559C000D6BB88 /* DataManager.swift */,
+				080F563E2965A0BF00D6BB88 /* NewActivityView.swift */,
 				080F560929652A4700D6BB88 /* ContentView.swift */,
+				080F56362965406E00D6BB88 /* GoogleService-Info.plist */,
 				080F560B29652A5200D6BB88 /* Assets.xcassets */,
 				080F560D29652A5200D6BB88 /* Preview Content */,
 			);
@@ -143,6 +162,10 @@
 			dependencies = (
 			);
 			name = "ToDoList ios";
+			packageProductDependencies = (
+				080F563229653EA500D6BB88 /* FirebaseAuth */,
+				080F563429653EA500D6BB88 /* FirebaseFirestore */,
+			);
 			productName = "ToDoList ios";
 			productReference = 080F560429652A4700D6BB88 /* ToDoList ios.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +238,9 @@
 				Base,
 			);
 			mainGroup = 080F55FB29652A4700D6BB88;
+			packageReferences = (
+				080F563129653EA500D6BB88 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 080F560529652A4700D6BB88 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +259,7 @@
 			files = (
 				080F560F29652A5200D6BB88 /* Preview Assets.xcassets in Resources */,
 				080F560C29652A5200D6BB88 /* Assets.xcassets in Resources */,
+				080F56372965406E00D6BB88 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +284,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				080F563B296557C100D6BB88 /* Activity.swift in Sources */,
+				080F563D296559C000D6BB88 /* DataManager.swift in Sources */,
 				080F560A29652A4700D6BB88 /* ContentView.swift in Sources */,
 				080F560829652A4700D6BB88 /* ToDoList_iosApp.swift in Sources */,
+				080F563F2965A0BF00D6BB88 /* NewActivityView.swift in Sources */,
+				080F563929654D4900D6BB88 /* ListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,6 +630,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		080F563129653EA500D6BB88 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		080F563229653EA500D6BB88 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 080F563129653EA500D6BB88 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		080F563429653EA500D6BB88 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 080F563129653EA500D6BB88 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 080F55FC29652A4700D6BB88 /* Project object */;
 }
